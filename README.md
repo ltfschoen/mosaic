@@ -6,6 +6,7 @@ Simulation Steps
 - Composited photomosaic contains results of the original image in accordance with the specification, however tiles may not always be displayed in the correct representative position or colour depending on what image is loaded.
 
 * Running the App in Google Chrome. Click the button "Choose File" to upload an image. Wait for original image and associated photomosaic to be displayed.
+```npm install```
 ```node server```
 
 * Testing with Jasmine and ESLint
