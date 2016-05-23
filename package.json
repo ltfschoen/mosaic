@@ -1,8 +1,18 @@
 {
   "author": "Canva",
   "name": "mosaic",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ltfschoen/mosaic.git"
+  },
   "scripts": {
     "start": "node server.js"
+  },
+  "dependencies": {
+    "es6-promise": "^3.2.1",
+    "eslint": "^2.10.2",
+    "gulp": "^3.9.1",
+    "gulp-file": "^0.3.0"
   }
 }

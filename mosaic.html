@@ -1,11 +1,69 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="js/deck_composite.js"></script>
+    <script type="text/javascript" src="js/singleton.js"></script>
+    <script type="text/javascript" src="js/controller.js"></script>
+    <script type="text/javascript" src="js/deck.js"></script>
+    <script type="text/javascript" src="js/preloader.js"></script>
+    <script type="text/javascript" src="js/deck_model.js"></script>
     <script type="text/javascript" src="js/mosaic.js"></script>
     <script type="text/javascript" src="js/client.js"></script>
     <title>Mosaic</title>
   </head>
   <body>
     <!-- Edit me. -->
+    <div id="title">Please select an image file to generate a mosaic.</div>
+    <div id="input">
+      <input type="file"><br>
+      <span id="loading">Loading...</span><br>
+      <span id="notifications"></span><br></div>
+    <div id="preview-image">
+      <img src="" id="image-uploaded"></div>
+    <div id="container-output"></div>
   </body>
+  <style>
+    @media only screen and (max-width: 500px) {
+      body {
+        background-color: lightblue;
+      }
+    }
+    body {
+      text-align: center;
+    }
+    #title {
+      width: 100%;
+      text-align: center;
+      color: #333333; 
+      font-family: Arial; 
+      font-weight: bold;
+      font-size: 1.5em;    
+    }
+    #notifications, #loading {
+      text-align: center;
+      color: #ff3366; 
+      font-family: Arial; 
+      font-weight: bold;
+    }
+    #input {
+      background-color: #ddddff; 
+      padding: 1em;
+    }
+    #preview-image {
+      vertical-align: center;
+      width: 50%;
+    }
+    #image-uploaded {
+      width: 100%;
+    }
+    #container-output {
+      width: 100%; 
+      overflow: auto;
+      vertical-align: center;
+    }
+    input[type='file'] {
+      padding-bottom: 1em;
+    }
+  </style>
 </html>
