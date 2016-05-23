@@ -1,8 +1,11 @@
 Simulation Steps
 ========
-**Important Note: Supported only in Google Chrome**
-	
-* Running the App in Google Chrome
+**Important Notes:**
+	**- Supported only for Google Chrome browser**
+	**- Optimise Performance of loading mosaic faster by reducing timePostfix value in preloader. Currently its value is set to clearly demonstrate in the UI that each row is displayed sequentially from top to bottom, and that when each row loads all its associated tiles display at the same time.**
+  **- Composited photomosaic contains results of the original image in accordance with the specification, however tiles may not always be displayed in the correct representative position or colour depending on what image is loaded.**
+
+* Running the App in Google Chrome. Click the button "Choose File" to upload an image. Wait for original image and associated photomosaic to be displayed.
 ```node server```
 
 * Testing with Jasmine and ESLint
@@ -40,5 +43,5 @@ Submission Checklist
 - [x] **ESLint**
 - [x] **Bugs/Issues**
 	- Image tile colours and positions scattered on mosaic do not match the original image (i.e. black instead of white) due to problem processing preloader method (being passed each base64 images tile) 
-- [ ] **Submission**
+- [x] **Submission**
 	- FE your First Name, Last Name and YYMMDD (FELukeSchoen16____).

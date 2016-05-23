@@ -171,7 +171,8 @@ ImagePreloader.prototype.preload = function () {
       // Tweak the value of timeout to display each deck (row) faster or slower in the browser.
       // The timeout for each successive row must increase in order for rows to appear sequentially.
       var timePrefix = index + 1;
-      var timeout = timePrefix * 100;
+      var timePostfix = 100; // Value must be greater than zero
+      var timeout = timePrefix * timePostfix;
       setTimeout(function() { 
         // Composite Design Pattern Show
         t.deckComposite.show(index);
