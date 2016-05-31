@@ -46,3 +46,17 @@ Submission Checklist
 	- Image tile colours and positions scattered on mosaic do not match the original image (i.e. black instead of white) due to problem processing preloader method (being passed each base64 images tile) 
 - [x] **Submission**
 	- FE your First Name, Last Name and YYMMDD (FELukeSchoen16____).
+
+TODO
+========
+
+- [x] Modular structure
+- [ ] Output is wrong not a mosiac of uploaded image
+- [ ] Output doesn't match requirements because it appends loaded images immediately, and waits for a hardcoded period of time before rendering the whole row; assuming everything else has loaded...
+- [ ] Submission doesn't handle large images, instead they're resized somehow
+- [ ] Submission doesn't work in Firefox, author has left comments but did not investigate why
+- [ ] Image is extracted with drawImages (then converted to data URIs) AND then imported into a canvas with getImageData call, per tile; bad performance.
+- [ ] No strong view / logic separation
+- [ ] No use of web workers
+- [ ] Makes XMLHttpRequest for SVG file and imports a node; Unfamiliar with browser support for SVG images
+- [ ] Handling of non-compliant browsers isn't productive (should throw error or notify the user, not silently fail)
